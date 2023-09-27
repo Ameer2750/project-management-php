@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------------
@@ -52,3 +52,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+#project routes
+
+$route['project'] = 'Project/index';
+$route['project/create'] = 'Project/create';
+$route['project/edit/(:num)'] = 'Project/edit/$1';
+$route['project/update/(:num)'] = 'Project/update/$1';
+$route['project/delete/(:num)'] = 'Project/delete/$1';
